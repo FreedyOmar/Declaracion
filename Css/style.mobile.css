@@ -36,6 +36,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 92vw;
+  max-height: 80vh;   /* límite de alto en pantalla */
+  overflow-y: auto;   /* scroll vertical */
   font-size: 1.05rem;
   text-align: center;
   color: #000000;
@@ -43,7 +45,7 @@ body {
   white-space: pre-line;
   z-index: 3;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;  /* ahora sí podrás usar el scroll */
 }
 
 .signature {
