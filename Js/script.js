@@ -70,7 +70,7 @@ function showDedicationText() {
       Para mi eres como el sol haces que todo se sienta tan calido...haces que todo gire ... y yo soy tan feliz con solo girar a tu alrededor
       Para algunos conocerte puede llegar a ser cuetion de suerte o de la vida, pero... para mi.. Conocerte fue un regalo de Dios
       \n Me retiro dandote un piropo
-      \n No importa cuanto brille la luna, el sol o un simple foco siempre me va a encantar el brillos de tus ojos ;`;  } else {
+      \n No importa cuanto brille la luna, el sol o un simple foco siempre me va a encantar el brillos de tus ojos`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -98,7 +98,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "loves you, your secret admirer";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor,Omar";
   signature.classList.add('visible');
 }
 
@@ -224,7 +224,18 @@ function playBackgroundMusic() {
   };
 }
 
+
 window.addEventListener('DOMContentLoaded', () => {
   playBackgroundMusic();
-})
 
+  // Botón enviar respuesta
+  const btn = document.getElementById("send-email-btn");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      const mensaje = document.getElementById("dedication-text").innerText;
+      const asunto = "Respuesta a tu dedicatoria ❤️";
+      const correo = "freddyomaralvarado88@gmail.com"; // cambia aquí si deseas otro destino
+      window.location.href = `mailto:${correo}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
+    });
+  }
+});
