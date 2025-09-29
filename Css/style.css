@@ -176,3 +176,16 @@ body {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+#send-email-btn {
+  background: #e60026;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#send-email-btn:hover {
+  background: #b3001d;
+}
