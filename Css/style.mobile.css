@@ -110,27 +110,31 @@ body {
   height: 18px;
 }
 /* ============================
-   Estilos para botón en móviles
+   Botón flotante en móviles
    ============================ */
 #send-email-btn {
-  display: block;
-  width: 80%;
-  max-width: 300px;
-  margin: 18px auto;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
   background: #e60026;
-  color: #ffffff;
-  font-size: 1rem;
-  padding: 12px;
+  color: #fff;
+  font-size: 0.9rem;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  text-align: center;
-  transition: background 0.3s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
   z-index: 20;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s;
 }
 
 #send-email-btn:hover {
   background: #b3001d;
+  transform: scale(1.05);
 }
+
 
