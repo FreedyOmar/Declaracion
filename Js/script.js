@@ -234,7 +234,7 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener("click", () => {
       const mensaje = document.getElementById("dedication-text").innerText;
       const asunto = "Respuesta a tu dedicatoria ❤️";
-      const correo = "freddyomaralvarado88@gmail.com"; // cambia aquí si deseas otro destino
+      const correo = "anonimatoSecreto1910@gmail.com"; // cambia aquí si deseas otro destino
       window.location.href = `mailto:${correo}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
     });
   }
