@@ -109,4 +109,28 @@ body {
   width: 13px;
   height: 18px;
 }
+/* ============================
+   Estilos para botón en móviles
+   ============================ */
+#send-email-btn {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 18px auto;
+  background: #e60026;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+  z-index: 20;
+  position: relative;
+}
+
+#send-email-btn:hover {
+  background: #b3001d;
+}
 
