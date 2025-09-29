@@ -70,7 +70,7 @@ function showDedicationText() {
       Para mi eres como el sol haces que todo se sienta tan calido...haces que todo gire ... y yo soy tan feliz con solo girar a tu alrededor
       Para algunos conocerte puede llegar a ser cuetion de suerte o de la vida, pero... para mi.. Conocerte fue un regalo de Dios
       \n Me retiro dandote un piropo
-      \n No importa cuanto brille la luna, el sol o un simple foco siempre me va a encartar el brillos de tus ojos ;`;  } else {
+      \n No importa cuanto brille la luna, el sol o un simple foco siempre me va a encantar el brillos de tus ojos ;`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
