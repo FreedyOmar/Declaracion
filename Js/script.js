@@ -60,16 +60,16 @@ function getURLParam(name) {
 function showDedicationText() {
   let text = getURLParam('text');
   if (!text) {
-    text = `Para la chica con la sonrisa mas dulce :\n\nTe contare un secreto.... Me hubiera encantado tener cinco vidas! Habría nacido en cinco ciudades diferentes, 
+    text = `Para ti; La chica con la sonrisa mas dulce :\n\nTe contare un secreto.... Me hubiera encantado tener cinco vidas! Habría nacido en cinco ciudades diferentes, 
       y hubiese probado mucha comida diferente, habria estudiado cinco carreras diferentes,hubiera tenido cinco empleos diferentes y.......
-      aun asi....en cada una de esas vidas me enamoraria de tu sonrisa y de tu mirada
+      aun asi....en cada una de esas vidas se que te encontraria y... me enamoraria de tu sonrisa y de tu mirada
       \n Tus ojos, tu sonrisa, tu ser... Para mí, eres la chica más linda del mundo. Cada vez que te veo, mi corazón late más rápido
-       y mi día se ilumina. déjame demostrártelo con cada gesto, cada palabra y cada momento que compartamos juntos.
-      \n no se que pienses acerca de mi.....
-      pero yo quiero saber mas de ti ya que para mi ....es inevitable.. se que ... cualquier version de ti  amare a cada una de ellas\n 
+       y mi día se ilumina. quiero demostrártelo con cada gesto, cada palabra y cada momento que compartamos juntos.
+      \n no se que pienses acerca de mi.....Despues de todo hasta yo desconfio de mi.
+      Pero yo quiero saber mas de ti , para mi ....es inevitable.. se que ... cualquier version de ti  amare a cada una de ellas\n 
       Para mi eres como el sol haces que todo se sienta tan calido...haces que todo gire ... y yo soy tan feliz con solo girar a tu alrededor
       Para algunos conocerte puede llegar a ser cuetion de suerte o de la vida, pero... para mi.. Conocerte fue un regalo de Dios
-      \n Me retiro dandote un piropo
+      \n 
       \n No importa cuanto brille la luna, el sol o un simple foco siempre me va a encantar el brillos de tus ojos`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
@@ -98,7 +98,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Your secret admirer loves you";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Mi corazon siempre sera tuyo; Omar";
   signature.classList.add('visible');
 }
 
