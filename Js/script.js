@@ -150,7 +150,7 @@ function showCountdown() {
 
     container.innerHTML =
       `hace <b>${days}</b> días qu te amo<br>` +
-      `y lo hare hasta <b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s el infinito</b>`;
+      `.<b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s </b>`;
     container.classList.add('visible');
   }
   update();
