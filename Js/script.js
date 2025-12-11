@@ -1,4 +1,3 @@
-//© Zero - Código libre no comercial
 
 // Cargar el SVG y animar los corazones
 fetch('Img/treelove.svg')
@@ -60,17 +59,31 @@ function getURLParam(name) {
 function showDedicationText() {
   let text = getURLParam('text');
   if (!text) {
-    text = `Para ti; La chica con la sonrisa mas dulce :\n\nTe contare un secreto.... Me hubiera encantado tener cinco vidas! Habría nacido en cinco ciudades diferentes, 
-      y hubiese probado mucha comida diferente, habria estudiado cinco carreras diferentes,hubiera tenido cinco empleos diferentes y.......
-      aun asi....en cada una de esas vidas se que te encontraria y... me enamoraria de tu sonrisa y de tu mirada
-      \n Tus ojos, tu sonrisa, tu ser... Para mí, eres la chica más linda del mundo. Cada vez que te veo, mi corazón late más rápido
-       y mi día se ilumina. quiero demostrártelo con cada gesto, cada palabra y cada momento que compartamos juntos.
-      \n no se que pienses acerca de mi.....Despues de todo hasta yo desconfio de mi.
-      Pero yo quiero saber mas de ti , para mi ....es inevitable.. se que ... cualquier version de ti  amare a cada una de ellas\n 
-      Para mi eres como el sol haces que todo se sienta tan calido...haces que todo gire ... y yo soy tan feliz con solo girar a tu alrededor
-      Para algunos conocerte puede llegar a ser cuetion de suerte o de la vida, pero... para mi.. Conocerte fue un regalo de Dios
-      \n 
-      \n No importa cuanto brille la luna, el sol o un simple foco siempre me va a encantar el brillos de tus ojos`;  } else {
+    text = `Para ti; Con la sinceridad de mi corazon y mi alma :\n
+    \nQuiero empezar pidiendote disculpas.......
+    \n por todas las veces que deliveradamente te ignore, por las veces que minimice tus problemas y priorice los mios,por todas las lagrimas que deramaste por mi infantileria
+    y falta de compromiso, y por no tomar las cosas con mas seriedad y siempre dudar de tus sentimientos hacia mi.
+      \n desde que tengo memoria me decian que era muy maduro para mi edad, y crei tanto en eso que cuando debi seguir madurando me quede esctancado, no podia ver mas aya de lo que yo cria.
+      deje a un lado tus sentimentos, y te lastime de la peor forma posible, de manera sentimental. En pocas palabras, fui un total egosita que simplemente se prioriso a si mismo
+      por eso tenia tanto temor a decir que te amaba, por que si al final ya no deseabas estar conmigo, mi excusa para evitar el dolor seria esa decir que solo me gustabas y que debia ser algo pasajero.
+      \n debo de confesar que siempre tuve miedo de que tus semtimientos hacia mi solo fueran una burbuja, que tarde o temprano revienta lo mas ironico es que por actuar como actue
+      ese miedo se volvio una realidad.
+      \n decirte, o bueno escribirte todo esto no cambia el pasado pero, sirve para que sepas que me siento arrepentido por todo lo que te cause
+      \n en segundo lugar queria agradecerte 
+      \n incluso despues de todo lo vivido me brindaste tu amistad, has estado ahi para mi cuando mas lo necesite, me has ayuado a sonreir, a sentir que mis sentimientos tambien importan
+      a que incluso, lo que considero que me hace un "monstruo" es lo que mas humano me hace, que no soy perfecto, pero que eso no me hace una mala persona.
+      \n eres como el sol en mi vida, lo alumbras todo,haces que todo se sienta tan calido, haces que todo gire y yo.... soy tan feliz con solo girar a tu alrededor.
+      \n si no mal recuerdo una vez te dije que lo sentimientos jamas cambian, los adaptas para usarlos de otra manera; con cada sonrisa con cada pelea y con cada broma trate de 
+      convencerme de que lo que sentia por ti era solo amistad, pero no puedo evitar sentir que no es asi.
+      \n y si como seguramente lo estas suponiendo o pensando........ Aun me gustas.
+      \n El que me contaras tus problemas, y que sintiera un fuerte dolor en mi mente, en mi pecho y en mi corazon me llevaron a dejar de engañarme a mi mismo.
+      \n Quiero estar ahi para ti..... y no me mal entiedas no necesito que me respondas si sientes lo mismo o no, solo quiero que lo sepas y ya. 
+      \n Quiero poder ayudarte cuando lo necesites, extenderte mi mano, y formar una nueva sonrisa en tu cara, recordarte lo valiosa que eres cuando te haga falta,
+      como te mencione no necesito saber si sientes lo mismo.
+      \n solo quiero que me permitas ser parte de tu vida.
+      
+      
+      `;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
