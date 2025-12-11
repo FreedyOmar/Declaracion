@@ -148,9 +148,9 @@ function showCountdown() {
     let eventMinutes = Math.floor((eventDiff / (1000 * 60)) % 60);
     let eventSeconds = Math.floor((eventDiff / 1000) % 60);
 
-    container.innerHTML =
-     // `hace <b>${days}</b> días qu te amo<br>` +//
-      `hace <b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s que te amo</b>`;
+     container.innerHTML =
+      `Llevas en mi mente: <b>${days}</b> días<br>` +
+      `Lo que llevas en mi corazon: <b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s</b>`;
     container.classList.add('visible');
   }
   update();
