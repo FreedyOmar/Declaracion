@@ -55,37 +55,47 @@ function getURLParam(name) {
   const url = new URL(window.location.href);
   return url.searchParams.get(name);
 }
-
 function showDedicationText() {
   let text = getURLParam('text');
   if (!text) {
-    text = `Para ti; Con la sinceridad de mi corazon y mi alma :\n
-    \nQuiero empezar pidiendote disculpas.......
-    \n por todas las veces que deliveradamente te ignore, por las veces que minimice tus problemas y priorice los mios,por todas las lagrimas que deramaste por mi infantileria
-    y falta de compromiso, y por no tomar las cosas con mas seriedad y siempre dudar de tus sentimientos hacia mi.
-      \n desde que tengo memoria me decian que era muy maduro para mi edad, y crei tanto en eso que cuando debi seguir madurando me quede esctancado, no podia ver mas aya de lo que yo cria.
-      deje a un lado tus sentimentos, y te lastime de la peor forma posible, de manera sentimental. En pocas palabras, fui un total egosita que simplemente se prioriso a si mismo
-      por eso tenia tanto temor a decir que te amaba, por que si al final ya no deseabas estar conmigo, mi excusa para evitar el dolor seria esa decir que solo me gustabas y que debia ser algo pasajero.
-      \n debo de confesar que siempre tuve miedo de que tus semtimientos hacia mi solo fueran una burbuja, que tarde o temprano revienta lo mas ironico es que por actuar como actue
-      ese miedo se volvio una realidad.
-      \n decirte, o bueno escribirte todo esto no cambia el pasado pero, sirve para que sepas que me siento arrepentido por todo lo que te cause
-      \n en segundo lugar queria agradecerte 
-      \n incluso despues de todo lo vivido me brindaste tu amistad, has estado ahi para mi cuando mas lo necesite, me has ayuado a sonreir, a sentir que mis sentimientos tambien importan
-      a que incluso, lo que considero que me hace un "monstruo" es lo que mas humano me hace, que no soy perfecto, pero que eso no me hace una mala persona.
-      \n eres como el sol en mi vida, lo alumbras todo,haces que todo se sienta tan calido, haces que todo gire y yo.... soy tan feliz con solo girar a tu alrededor.
-      \n si no mal recuerdo una vez te dije que lo sentimientos jamas cambian, los adaptas para usarlos de otra manera; con cada sonrisa con cada pelea y con cada broma trate de 
-      convencerme de que lo que sentia por ti era solo amistad, pero no puedo evitar sentir que no es asi.
-      \n y si como seguramente lo estas suponiendo o pensando........ Aun me gustas.
-      \n El que me contaras tus problemas, y que sintiera un fuerte dolor en mi mente, en mi pecho y en mi corazon me llevaron a dejar de engañarme a mi mismo.
-      \n Quiero estar ahi para ti..... y no me mal entiedas no necesito que me respondas si sientes lo mismo o no, solo quiero que lo sepas y ya. 
-      \n Quiero poder ayudarte cuando lo necesites, extenderte mi mano, y formar una nueva sonrisa en tu cara, recordarte lo valiosa que eres cuando te haga falta,
-      como te mencione no necesito saber si sientes lo mismo.
-      \n solo quiero que me permitas ser parte de tu vida.
-      
-      
-      `;  } else {
+    text = `Para ti, Ketty, mi amor 💖\n
+    \nHoy celebramos nuestro primer mes juntos… y aunque el tiempo pueda parecer breve, lo que has sembrado en mi corazón se siente inmenso, como si cada día a tu lado guardara una eternidad.
+    
+    \nKetty, desde que llegaste, todo cambió de una forma tan sutil y tan hermosa… como la luz del amanecer que entra sin hacer ruido, pero transforma por completo la oscuridad en esperanza.
+    
+    \nMe gusta tu forma de ser, tu esencia, tu manera de ver la vida… pero sobre todo, me gusta cómo haces que mi mundo se sienta más cálido, más vivo, más lleno de sentido.
+    
+    \nA veces me quedo pensando en lo afortunado que soy de coincidir contigo en este momento de nuestras vidas… porque entre millones de caminos posibles, elegimos encontrarnos.
+    
+    \nLa palabra de Dios dice en 1 Corintios 13:4-7:
+    \n“El amor es paciente, es bondadoso; el amor no es envidioso ni jactancioso ni orgulloso. No se comporta con rudeza, no es egoísta, no se enoja fácilmente, no guarda rencor. Todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta.”
+    
+    \nY eso es lo que deseo contigo, Ketty… un amor que no solo se sienta, sino que se construya con paciencia, con respeto y con verdad, día a día.
+    
+    \nTambién dice en Eclesiastés 4:9:
+    \n“Mejores son dos que uno, porque tienen mejor recompensa por su trabajo.”
+    
+    \nY contigo todo tiene más sentido… los días son más bonitos, las risas más sinceras, y los silencios más tranquilos.
+    
+    \nHay algo que nace en lo más profundo de mí y necesito decírtelo:
+    \nOjalá pudiera vivir 5 vidas, con 5 empleos diferentes, 5 familias diferentes, 5 caminos distintos… porque aun así, en cada una de esas vidas, estoy seguro de que me volvería a enamorar de ti, Ketty.
+    
+    \nPorque lo que siento por ti no es pasajero… es como un susurro constante en mi alma que me recuerda que amar también es encontrar un hogar en otra persona.
+    
+    \nNo somos perfectos, pero contigo entendí que el amor verdadero no busca perfección… busca permanecer, crecer y florecer incluso en los días grises.
+    
+    \nQuiero que este primer mes sea solo el inicio de algo mucho más grande… de una historia escrita con paciencia, con cariño y con momentos que se vuelvan eternos en nuestra memoria.
+    
+    \nGracias por existir, por llegar a mi vida y por permitirme caminar a tu lado.
+    
+    \nFeliz primer mes, Ketty ❤️
+    
+    \nTe quiero muchísimo… hoy, mañana y en cada vida donde el destino vuelva a cruzarnos.
+    `;
+  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
+}
   const container = document.getElementById('dedication-text');
   container.classList.add('typing');
   let i = 0;
@@ -148,8 +158,8 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2022-07-22T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2022-07-22T00:00:00');
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2026-02-24T00:00:00'); 
+  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2026-02-24T00:00:00');
 
   function update() {
     const now = new Date();
